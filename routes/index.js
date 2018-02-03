@@ -4,8 +4,8 @@
  * @name      index.js
  * @summary   Route control of homepage
  * @link      /route/index.js
- * @since     2017-09-06
- * @author    Shilei Tian <tianshilei@sjtu.edu.cn>
+ * @since     2018-02-03
+ * @author    Zuowu Zheng <wozhengzw@gmail.com>
  */
     
 // 3rd party modules

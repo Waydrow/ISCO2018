@@ -1,11 +1,11 @@
 /**
- * This is the app file of `COCOA 2017 Website`.
+ * This is the app file of `ISCO 2018 Website`.
  *
  * @name      app.js
  * @summary   App file of this project
  * @link      app.js
- * @since     2017-09-06
- * @author    Shilei Tian <tianshilei@sjtu.edu.cn>
+ * @since     2018-02-03
+ * @author    Zuowu Zheng <wozhengzw@gmail.com>
  */
 
 // 3rd party modules
