@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COCOA 2017, Shanghai</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!--[if lte IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please
+    <a href="http://browsehappy.com/">upgrade your browser</a>
+    or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+    improve your experience.
+</p>
+<![endif]-->
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href="#">Brand</a>-->
+            <a class="navbar-brand" href="/cocoa2017">COCOA 2017</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="navbar-collapse collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown <%= active == 4 ? 'active' : '' %>">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-star" aria-hidden="true"></i> Events <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bestpapers.html">Best Papers</a></li>
+                        <li><a href="photos.html">Conference Photos</a></li>
+                        <li><a href="banquet.html">Banquet</a></li>
+                        <li><a href="moments.html">Moments</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown <%= active == 0 ? 'active' : '' %>">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-suitcase" aria-hidden="true"></i> Conference <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="program.html">Conference Program</a></li>
+                        <li><a href="keynote.html"> Keynote Speakers</a></li>
+                        <li><a href="venue.html">Conference Venue</a></li>
+                        <li><a href="accepted.html">Accepted Papers</a></li>
+                        <li><a href="proceeding.html">Online Proceedings</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown <%= active == 1 ? 'active' : '' %>">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-user" aria-hidden="true"></i> Author Information <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="instructions.html">Author Instructions</a></li>
+                        <li><a href="callforpapers.html">Call for Papers</a>
+                        <li><a href="submission.html">Camera-Ready Submission</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown <%= active == 2 ? 'active' : '' %>">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-sitemap" aria-hidden="true"></i> Organization <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="chairs.html">Conference Chairs</a></li>
+                        <li><a href="organizingcommittee.html">Organizing Committee</a></li>
+                        <li><a href="programcommittee.html">Program Committee</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                    </ul>
+                </li>
+                <li class="<%= active == 3 ? 'active' : '' %>">
+                    <a href="contactus.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact Us</a>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <img class="img-responsive" src="img/header.png" alt="Banner" width="100%">
+        </div>
+    </div>
+
+    <main>
+        <div class="row">
+            <div class="col-md-12">
+                <%- include(page); %>
+            </div>
+        </div>
+    </main>
+
+    <footer style="border-top: solid #E5E1E0 0.2px; margin-top: 20px">
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <div><h5 style="float: left; margin-top: 65px"><small>Publication & Special Issues</small></h5></div>
+                <div class="img-thumbnail">
+                    <a target="_blank" href="http://link.springer.com/journal/453"><img src="img/algorithmica_cover.png"
+                                                                                        height="130px"></a>
+                </div>
+                <div class="img-thumbnail">
+                    <a target="_blank" href="https://www.journals.elsevier.com/theoretical-computer-science/"><img
+                                src="img/tcs_cover.png"
+                                height="130px"></a>
+                </div>
+                <div class="img-thumbnail">
+                    <a target="_blank" href="http://www.springer.com/mathematics/journal/10878"><img src="img/jco.png"
+                                                                                                     height="130px"></a>
+                </div>
+                <div class="img-thumbnail">
+                    <a target="_blank" href="http://www.springer.com/cn/computer-science/lncs"><img src="img/lncs.png"
+                                                                                                    height="130px"></a>
+                </div>
+                <div class="img-thumbnail">
+                    <a target="_blank" href="http://www.mdpi.com/journal/algorithms"><img src="img/algorithms.png"
+                                                                                                    height="50px"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <div><h5 style="float: left; margin-top: 40px"><small>Sponsors</small></h5></div>
+                <!--<span style="margin-top: 40px; color: grey"><small>Sponsors</small></span>-->
+                <div class="img-thumbnail">
+                    <a target="_blank" href="http://anl.sjtu.edu.cn"><img src="img/anl.png" height="80px"></a>
+                </div>
+                <div class="img-thumbnail">
+                    <img src="img/gps.png" height="80px">
+                </div>
+                <div class="img-thumbnail">
+                    <a target="_blank" href="http://riis.shufe.edu.cn"><img src="img/riis.png" height="104px"></a>
+                </div>
+                <div class="img-thumbnail">
+                    <a target="_blank" href="https://www.shanshu.ai"><img src="img/shanshu.png" height="48px"></a>
+                </div>
+                <div class="img-thumbnail">
+                    <a target="_blank" href="http://www.springer.com"><img src="img/springer.png" height="80px"></a>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <!--<span style="margin-top: 40px; color: grey"><small>Organization</small></span>-->
+                <div><h5 style="float: left; margin-top: 40px"><small>Organizations</small></h5></div>
+                <div class="img-thumbnail">
+                    <a target="_blank" href="http://www.sjtu.edu.cn"><img src="img/sjtu.png" height="80px"></a>
+                </div>
+                <div class="img-thumbnail">
+                    <a target="_blank" href="http://www.nju.edu.cn"><img src="img/nju.png" height="80px"></a>
+                </div>
+                <div class="img-thumbnail">
+                    <a target="_blank" href="http://www.gsu.edu"><img src="img/gsu.png" height="80px"></a>
+                </div>
+                <div class="img-thumbnail">
+                    <a target="_blank" href="http://www.hit.edu.cn"><img src="img/hit.png" height="48px"></a>
+                </div>
+                <div class="img-thumbnail">
+                    <a target="_blank" href="http://www.tjut.edu.cn"><img src="img/tjut.png" height="80px"></a>
+                </div>
+                <div class="img-thumbnail">
+                    <a target="_blank" href="http://www.kennesaw.edu"><img src="img/ksu.png" height="48px"></a>
+                </div>
+                <div class="img-thumbnail">
+                    <a target="_blank" href="https://www.calstate.edu"><img src="img/csueb.png" height="80px"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="js/plugins.js"></script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-97631285-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+</body>
+</html>
