@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f452d032-7768-46ff-b03c-7eb8910d3545" name="ANL Server" url="http://anl.sjtu.edu.cn">
+        <fileTransfer host="anl.sjtu.edu.cn" port="22" rootFolder="/home/zuowu" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
