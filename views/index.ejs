@@ -71,16 +71,22 @@
                         <li><a href="registration.html">Registration</a></li>
                     </ul>
                 </li>-->
-                <li class="dropdown <%= active == 2 ? 'active' : '' %>">
+                <!--<li class="dropdown <%= active == 2 ? 'active' : '' %>">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-sitemap" aria-hidden="true"></i> Organization <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                        <!--<li><a href="chairs.html">Conference Chairs</a></li>-->
+                        &lt;!&ndash;<li><a href="chairs.html">Conference Chairs</a></li>&ndash;&gt;
                         <li><a href="organizingcommittee.html">Organizing Committee</a></li>
                         <li><a href="programcommittee.html">Program Committee</a></li>
-                        <!--<li><a href="sponsors.html">Sponsors</a></li>-->
+                        &lt;!&ndash;<li><a href="sponsors.html">Sponsors</a></li>&ndash;&gt;
                     </ul>
+                </li>-->
+                <li class="<%= active == 1 ? 'active' : '' %>">
+                    <a href="registration.html"><i class="fa fa-user" aria-hidden="true"></i> Registration</a>
+                </li>
+                <li class="<%= active == 2 ? 'active' : '' %>">
+                    <a href="cochairs.html"><i class="fa fa-sitemap" aria-hidden="true"></i> Co-Chairs</a>
                 </li>
                 <li class="<%= active == 3 ? 'active' : '' %>">
                     <a href="contactus.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact Us</a>

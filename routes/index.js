@@ -20,7 +20,7 @@ router.get("/", function (req, res, next) {
     });
 });
 
-router.get("/proceeding.html", function (req, res, next) {
+/*router.get("/proceeding.html", function (req, res, next) {
     "use strict";
     return res.render("index", {
         "page": "proceeding",
@@ -42,7 +42,7 @@ router.get("/accepted.html", function (req, res, next) {
         "page": "accepted",
         "active": 0
     });
-});
+});*/
 
 router.get("/venue.html", function (req, res, next) {
     "use strict";
@@ -52,7 +52,7 @@ router.get("/venue.html", function (req, res, next) {
     });
 });
 
-router.get("/keynote.html", function (req, res, next) {
+/*router.get("/keynote.html", function (req, res, next) {
     "use strict";
     return res.render("index", {
         "page": "keynote",
@@ -82,7 +82,7 @@ router.get("/submission.html", function (req, res, next) {
         "page": "submission",
         "active": 1
     });
-});
+});*/
 
 router.get("/registration.html", function (req, res, next) {
     "use strict";
@@ -92,7 +92,7 @@ router.get("/registration.html", function (req, res, next) {
     });
 });
 
-router.get("/organizingcommittee.html", function (req, res, next) {
+/*router.get("/organizingcommittee.html", function (req, res, next) {
     "use strict";
     return res.render("index", {
         "page": "organizingcommittee",
@@ -122,6 +122,14 @@ router.get("/chairs.html", function (req, res, next) {
         "page": "chairs",
         "active": 2
     });
+});*/
+
+router.get("/cochairs.html", function (req, res, next) {
+    "use strict";
+    return res.render("index", {
+        "page": "cochairs",
+        "active": 2
+    })
 });
 
 router.get("/contactus.html", function (req, res, next) {
@@ -132,7 +140,7 @@ router.get("/contactus.html", function (req, res, next) {
     });
 });
 
-router.get("/bestpapers.html", function (req, res, next) {
+/*router.get("/bestpapers.html", function (req, res, next) {
     "use strict";
     return res.render("index", {
         "page": "bestpapers",
@@ -162,6 +170,6 @@ router.get("/moments.html", function (req, res, next) {
         "page": "moments",
         "active": 4
     });
-});
+});*/
 
 module.exports = router;
