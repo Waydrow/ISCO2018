@@ -10,7 +10,8 @@
     "ejs": "^2.5.7",
     "express": "^4.15.3",
     "morgan": "^1.8.2",
-    "serve-favicon": "^2.4.3"
+    "serve-favicon": "^2.4.3",
+    "sitemap": "^1.13.0"
   },
   "engines": {
     "node": "^6.11.1"

@@ -14,6 +14,7 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var routes = require('./routes/index');
+var sitemap = require('sitemap')
 
 var app = express();
 
