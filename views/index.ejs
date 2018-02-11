@@ -48,18 +48,26 @@
                         <li><a href="moments.html">Moments</a></li>
                     </ul>
                 </li>-->
-                <li class="dropdown <%= active == 0 ? 'active' : '' %>">
+
+                <li class="<%= active == -1 ? 'active' : '' %>">
+                    <a href="/ISCO2018"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                </li>
+
+                <li class="<%= active == 0 ? 'active' : '' %>">
+                    <a href="venue.html"><i class="fa fa-suitcase" aria-hidden="true"></i> Conference Venue</a>
+                </li>
+                <!--<li class="dropdown <%= active == 0 ? 'active' : '' %>">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-suitcase" aria-hidden="true"></i> Conference <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                        <!--<li><a href="program.html">Conference Program</a></li>-->
-                        <!--<li><a href="keynote.html"> Keynote Speakers</a></li>-->
+                        &lt;!&ndash;<li><a href="program.html">Conference Program</a></li>&ndash;&gt;
+                        &lt;!&ndash;<li><a href="keynote.html"> Keynote Speakers</a></li>&ndash;&gt;
                         <li><a href="venue.html">Conference Venue</a></li>
-                        <!--<li><a href="accepted.html">Accepted Papers</a></li>-->
-                        <!--<li><a href="proceeding.html">Online Proceedings</a></li>-->
+                        &lt;!&ndash;<li><a href="accepted.html">Accepted Papers</a></li>&ndash;&gt;
+                        &lt;!&ndash;<li><a href="proceeding.html">Online Proceedings</a></li>&ndash;&gt;
                     </ul>
-                </li>
+                </li>-->
                 <!--<li class="dropdown <%= active == 1 ? 'active' : '' %>">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-user" aria-hidden="true"></i> Author Information <b class="caret"></b>
@@ -138,11 +146,11 @@
                 </div>
             </div>
         </div>-->
-        <div class="row text-center">
+        <div class="row">
             <div class="col-sm-12">
-                <div><h5 style="float: left; margin-top: 40px"><small>Sponsors</small></h5></div>
+                <h5><small>Sponsors</small></h5>
                 <!--<span style="margin-top: 40px; color: grey"><small>Sponsors</small></span>-->
-                <ul style="display: inline-block; text-align: left; margin-top: 25px;">
+                <ul style="display: block; text-align: left; margin: 0;">
                     <li>Research Center of Graph Theory, Combinatorics and Network
                         Academy of Mathematics and Systems Science, Chinese Academy of Sciences
                     </li>
@@ -164,15 +172,20 @@
                     <a target="_blank" href="http://www.springer.com"><img src="img/springer.png" height="80px"></a>
                 </div>-->
             </div>
-            <div class="col-sm-12">
+            <div class="col-sm-12" style="margin: 15px 0;">
                 <!--<span style="margin-top: 40px; color: grey"><small>Organization</small></span>-->
-                <div><h5 style="float: left; margin-top: 40px"><small>Organizations</small></h5></div>
-                <div class="img-thumbnail">
+                <h5><small>Organizations</small></h5>
+                <ul style="display: block; text-align: left; margin: 0;">
+                    <li>Department of Computer Science and Engineering, Shanghai Jiao Tong Univ., Shanghai
+                    </li>
+                    <li>School of Business and Management, Donghua Univ., Shanghai</li>
+                </ul>
+                <!--<div class="img-thumbnail">
                     <a target="_blank" href="http://www.sjtu.edu.cn"><img src="img/sjtu.png" height="80px"></a>
                 </div>
                 <div class="img-thumbnail">
                     <a target="_blank" href="http://www.dhu.edu.cn/"><img src="img/donghua.jpg" height="80px"></a>
-                </div>
+                </div>-->
                 <!--<div class="img-thumbnail">
                     <a target="_blank" href="http://www.nju.edu.cn"><img src="img/nju.png" height="80px"></a>
                 </div>
