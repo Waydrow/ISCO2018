@@ -11,10 +11,22 @@
 // 3rd party modules
 var express = require('express');
 var path = require('path');
+var fs = require('fs');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var routes = require('./routes/index');
-var sitemap = require('sitemap')
+var sitemap = require('sitemap');
+const mongoose = require('mongoose');
+
+
+const models = path.join(__dirname, 'models');
+
+// Bootstrap models
+fs.readdirSync(models)
+    .filter(file => ~file.search(/^[^\.].*\.js$/))
+    .forEach(file => require(path.join(models, file)));
+
+const User = mongoose.model('User');
 
 var app = express();
 
@@ -45,6 +57,27 @@ app.use(function (err, req, res, next) {
         res.status(404).render("error", {status: 404});
     }
 });
+
+mongoose.connect('mongodb://localhost/testISCO', function(error) {
+    if (error) {
+        console.log(error);
+    } /*else {
+        console.log('database connected!');
+        var user = new User({
+            username: 'waydrow',
+            password: '6072',
+            name: 'Zheng Zuowu',
+            email: 'test@test.com'
+        });
+        user.save(function (e, us) {
+            if (e) {
+                return console.error(e);
+            }
+            console.log('new user added!')
+        });
+    }*/
+});
+
 
 module.exports = app;
 
