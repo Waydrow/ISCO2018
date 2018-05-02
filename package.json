@@ -12,7 +12,10 @@
   "dependencies": {
     "ejs": "^2.5.7",
     "express": "^4.15.3",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.0.7",
     "morgan": "^1.8.2",
+    "path": "^0.12.7",
     "serve-favicon": "^2.4.3",
     "sitemap": "^1.13.0"
   },
