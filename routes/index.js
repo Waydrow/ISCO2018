@@ -44,6 +44,14 @@ router.get("/accepted.html", function (req, res, next) {
     });
 });*/
 
+router.get("/attendanceList.html", function (req, res, next) {
+    "use strict";
+    return res.render("index", {
+        "page": "attendanceList",
+        "active": 0
+    });
+});
+
 router.get("/venue.html", function (req, res, next) {
     "use strict";
     return res.render("index", {
