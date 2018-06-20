@@ -56,14 +56,24 @@
                 <!--<li class="<%= active == 0 ? 'active' : '' %>">-->
                     <!--<a href="venue.html"><i class="fa fa-suitcase" aria-hidden="true"></i> Conference Venue</a>-->
                 <!--</li>-->
-                <li class="dropdown <%= active == 0 ? 'active' : '' %>">
+                <!--<li class="dropdown <%= active == 0 ? 'active' : '' %>">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-suitcase" aria-hidden="true"></i> Conference <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
+                        <li><a href="program.html">Conference Program</a></li>
                         <li><a href="attendanceList.html">Attendance List</a></li>
                         <li><a href="venue.html">Conference Venue</a></li>
                     </ul>
+                </li>-->
+                <li class="<%= active == 4 ? 'active' : '' %>">
+                    <a href="program.html"><i class="fa fa-suitcase" aria-hidden="true"></i> Program</a>
+                </li>
+                <li class="<%= active == 5 ? 'active' : '' %>">
+                    <a href="attendanceList.html"><i class="fa fa-user" aria-hidden="true"></i> Attendance</a>
+                </li>
+                <li class="<%= active == 6 ? 'active' : '' %>">
+                    <a href="venue.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Venue</a>
                 </li>
                 <!--<li class="dropdown <%= active == 1 ? 'active' : '' %>">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -88,10 +98,10 @@
                     </ul>
                 </li>-->
                 <li class="<%= active == 1 ? 'active' : '' %>">
-                    <a href="registration.html"><i class="fa fa-user" aria-hidden="true"></i> Registration</a>
+                    <a href="registration.html"><i class="fa fa-pencil" aria-hidden="true"></i> Registration</a>
                 </li>
                 <li class="<%= active == 2 ? 'active' : '' %>">
-                    <a href="cochairs.html"><i class="fa fa-sitemap" aria-hidden="true"></i> Co-Chairs</a>
+                    <a href="cochairs.html"><i class="fa fa-sitemap" aria-hidden="true"></i> Organization</a>
                 </li>
                 <li class="<%= active == 3 ? 'active' : '' %>">
                     <a href="contactus.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact Us</a>
