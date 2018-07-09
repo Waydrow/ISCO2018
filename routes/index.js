@@ -48,7 +48,7 @@ router.get("/attendanceList.html", function (req, res, next) {
     "use strict";
     return res.render("index", {
         "page": "attendanceList",
-        "active": 0
+        "active": 5
     });
 });
 
@@ -56,7 +56,15 @@ router.get("/venue.html", function (req, res, next) {
     "use strict";
     return res.render("index", {
         "page": "venue",
-        "active": 0
+        "active": 6
+    });
+});
+
+router.get("/program.html", function (req, res, next) {
+    "use strict";
+    return res.render("index", {
+        "page": "program",
+        "active": 4
     });
 });
 
