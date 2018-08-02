@@ -1,0 +1,27 @@
+<style>
+  #videos_list span {
+    color: #0000EE;
+    cursor: pointer;
+  }
+
+  #videos_list span:hover {
+    color: #ff4fff;
+  }
+</style>
+<h2>Banquet Videos</h2>
+<ul id="videos_list">
+    <% for (var i = 0; i < videos.length; i++) { %>
+        <li><span><%= videos[i] %></span></li>
+    <% } %>
+</ul>
+<script src='js/jquery.min.js'></script>
+<script>
+  $('#videos_list li span').each(function(index, el) {
+    $(this).on('click', function() {
+        var name = $(this).text();
+        var url = 'video_play.html?name=' + name;
+        //window.location.href = url;
+        window.open(url);
+    })
+  });
+</script>

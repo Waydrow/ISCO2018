@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Banquet Videos</title>
+</head>
+
+<style>
+html{
+   height: 100%;
+   min-height:100%;
+}
+body {
+  margin: 0; 
+  padding: 0;
+  text-align: center;
+  height: 100%;
+  min-height:100%;
+}
+
+ .center{
+  margin: auto;
+ }
+ /*#container {
+    width: 780px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    height: 100%;
+ }*/
+</style>
+
+<body>
+
+
+<div>
+<h1>Banquet Videos</h1>
+<h2 id='video_name'></h2>
+
+<video width="720"  controls="controls" id='video_box'>
+  <source src="">
+Your browser does not support the video tag. <b>Google Chrome</b> is recommended to watch the video.
+</video>
+</div>  
+
+<script src='js/jquery.min.js'></script>
+<script>
+  function parseURL(url){
+    var u = url.split("?")[1];
+    var para = u.split('=')[1];
+    return para;
+  }
+
+  var res = parseURL(decodeURI(window.location.href));
+
+  var vurl = 'banquet/' + res;
+
+  $('#video_name').text(res);
+  //alert(res);
+  $('#video_box source').prop('src', vurl);
+  $('#video_box').load();
+  //$('#video_box').play();
+</script>
+
+</body>
+</html>

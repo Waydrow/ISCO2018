@@ -11,6 +11,10 @@
 // 3rd party modules
 var express = require("express");
 var router = express.Router();
+var fs = require('fs');
+var path = require('path');
+
+var root = path.join(__dirname, '../');
 
 router.get("/", function (req, res, next) {
     "use strict";
@@ -66,6 +70,18 @@ router.get("/program.html", function (req, res, next) {
         "page": "program",
         "active": 4
     });
+});
+
+router.get("/video.html", function (req, res, next) {
+    "use strict";
+    let path1 = path.join(root, 'public', 'banquet');
+    let videos = fs.readdirSync(path1);
+    //console.log(test);
+    return res.render("index", {
+        "page": 'video',
+        'active': 10,
+        'videos': videos
+    })
 });
 
 /*router.get("/keynote.html", function (req, res, next) {
