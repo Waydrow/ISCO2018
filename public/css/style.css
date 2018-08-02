@@ -5,6 +5,7 @@
 .sponsor-cell {
     margin-top: 20px;
     border-bottom: solid gray 0.5px;
+    padding-bottom: 10px;
 }
 
 .chair-cell {
