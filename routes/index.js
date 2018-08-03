@@ -84,6 +84,14 @@ router.get("/video.html", function (req, res, next) {
     })
 });
 
+router.get("/celebration.html", function (req, res, next) {
+    "use strict";
+    return res.render("index", {
+        "page": "celebration",
+        "active": 11
+    });
+});
+
 /*router.get("/keynote.html", function (req, res, next) {
     "use strict";
     return res.render("index", {
