@@ -92,6 +92,14 @@ router.get("/celebration.html", function (req, res, next) {
     });
 });
 
+router.get("/photos.html", function (req, res, next) {
+    "use strict";
+    return res.render("index", {
+        "page": "photos",
+        "active": 12
+    });
+});
+
 /*router.get("/keynote.html", function (req, res, next) {
     "use strict";
     return res.render("index", {
